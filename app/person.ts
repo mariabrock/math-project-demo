@@ -1,7 +1,7 @@
-interface Person {
+export interface Person {
   name: string;
   age?: number;
   formatName: () => string;
 }
 
-// remember: the ? means that a property is optional!
+// remember: the ? means that a property is optional

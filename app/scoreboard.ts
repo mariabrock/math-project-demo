@@ -1,6 +1,7 @@
-/// <reference path="result.ts" />
+// / <reference path="result.ts" /> --> this is an example of our original reference
+import { Result } from "./result"; // this is our new import for modules
 
-class Scoreboard {
+export class Scoreboard {
 
   private results: Result[] = [];
 
