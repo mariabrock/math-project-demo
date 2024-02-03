@@ -1,12 +1,16 @@
 // / <reference path="result.ts" /> --> this is an example of our original reference
 import { Result } from "./result"; // this is our new import for modules
 
+import * as _ from 'lodash';
+
 export class Scoreboard {
 
   private results: Result[] = [];
 
   addResult(newResult: Result): void {
     this.results.push(newResult);
+    let allCapsName: string = _.upperCase(newResult.playerName);
+    console.log(`${allCapsName}: ${newResult.score}`)
   }
 
   updateScoreboard(): void {

@@ -18,6 +18,6 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    inline: false
+    port: 8080
   }
 };
